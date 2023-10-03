@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  // font-family: 'Roboto', sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@mixin flex($justify) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+  gap: 2rem;
+}
+
+@mixin btn($background) {
+  background-color: $background;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+}
+

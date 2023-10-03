@@ -1,0 +1,45 @@
+@import "./general";
+@import "./variables";
+
+nav {
+  @include flex(space-between);
+  padding: 1rem 0;
+
+  ul {
+    @include flex(space-between);
+
+    a {
+      font-weight: 500;
+      transition: all ease 0.3s;
+      &:link {
+        color: $navlink;
+      }
+      
+      &:active {
+        color: $navlink;
+      }
+
+      &:hover {
+        color: $btnColor
+      }
+      
+      &:focus {
+        color: $btnColor
+
+      }
+    }
+  }
+
+  .btn {
+    &-contact {
+      @include btn($btnColor);
+      color: $white;
+      transition: all ease 0.3s;
+      cursor: pointer;
+    }
+
+    &-contact:hover {
+      background-color: $background;
+    }
+  }
+}

@@ -24,36 +24,44 @@ a {
   padding: 0 2rem;
 }
 
-nav {
+header {
+  background: url(/images/hero.jpg) no-repeat top center/cover;
+  padding-bottom: 4rem;
+  height: 100vh;
+}
+header .nav-content {
+  background-color: #fff;
+}
+header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
   padding: 1rem 0;
 }
-nav ul {
+header nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
 }
-nav ul a {
+header nav ul a {
   font-weight: 500;
   transition: all ease 0.3s;
 }
-nav ul a:link {
+header nav ul a:link {
   color: #353535;
 }
-nav ul a:active {
+header nav ul a:active {
   color: #353535;
 }
-nav ul a:hover {
+header nav ul a:hover {
   color: #6F26C2;
 }
-nav ul a:focus {
+header nav ul a:focus {
   color: #6F26C2;
 }
-nav .btn-contact {
+header nav .btn-contact {
   background-color: #6F26C2;
   padding: 1rem 2rem;
   border-radius: 100px;
@@ -61,6 +69,6 @@ nav .btn-contact {
   transition: all ease 0.3s;
   cursor: pointer;
 }
-nav .btn-contact:hover {
+header nav .btn-contact:hover {
   background-color: #1D1C2D;
 }/*# sourceMappingURL=index.css.map */

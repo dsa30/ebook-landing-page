@@ -1,45 +1,59 @@
 @import "./general";
 @import "./variables";
 
-nav {
-  @include flex(space-between);
-  padding: 1rem 0;
+header {
+  background: url(/images/hero.jpg) no-repeat top center/cover;
+  padding-bottom: 4rem;
+  height: 100vh;
 
-  ul {
+  .nav-content {
+    background-color: $white;
+  }
+
+  nav {
     @include flex(space-between);
-
-    a {
-      font-weight: 500;
-      transition: all ease 0.3s;
-      &:link {
-        color: $navlink;
+    padding: 1rem 0;
+  
+    ul {
+      @include flex(space-between);
+  
+      a {
+        font-weight: 500;
+        transition: all ease 0.3s;
+        &:link {
+          color: $navlink;
+        }
+        
+        &:active {
+          color: $navlink;
+        }
+  
+        &:hover {
+          color: $btnColor
+        }
+        
+        &:focus {
+          color: $btnColor
+  
+        }
       }
-      
-      &:active {
-        color: $navlink;
+    }
+  
+    .btn {
+      &-contact {
+        @include btn($btnColor);
+        color: $white;
+        transition: all ease 0.3s;
+        cursor: pointer;
       }
-
-      &:hover {
-        color: $btnColor
-      }
-      
-      &:focus {
-        color: $btnColor
-
+  
+      &-contact:hover {
+        background-color: $background;
       }
     }
   }
 
-  .btn {
-    &-contact {
-      @include btn($btnColor);
-      color: $white;
-      transition: all ease 0.3s;
-      cursor: pointer;
-    }
+  .header-text {
 
-    &-contact:hover {
-      background-color: $background;
-    }
   }
 }
